@@ -13,5 +13,8 @@ export const translation = {
     date_of_birth: "Date of Birth",
     current_salary: "Current Salary",
     relevent_experience: "Relevent Experience",
-    notice_period: "Notice Period"
+    notice_period: "Notice Period",
+    salary_expectation: "Salary Expectation",
+    full_address: "Full Address",
+    status: "Status"
 }

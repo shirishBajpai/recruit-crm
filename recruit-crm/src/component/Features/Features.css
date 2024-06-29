@@ -1,0 +1,48 @@
+.features {
+    border-left: 1px solid #E9ECEF;
+}
+
+.features-listing{
+    display: flex;
+    background-color: #d3d3d3;
+   
+    padding: 0 1rem;
+    div {
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 0.813rem;
+    }
+    div:hover {
+        color: #2570CA;
+        font-weight: bolder;
+    }
+}
+
+.features-actions{
+    display: flex;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    div {
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 0.813rem;
+    }
+    div:hover {
+        color: #2570CA;
+        font-weight: bolder;
+    }
+}
+
+.features-selected{
+    background-color: #f0efef;
+    height: 100vh;
+    padding: 1rem 0;
+}
+
+.features-selected-actions{
+    text-align: justify;
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.813rem;
+}

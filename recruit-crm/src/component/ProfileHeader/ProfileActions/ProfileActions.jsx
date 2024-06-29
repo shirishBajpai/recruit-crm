@@ -14,7 +14,7 @@ const ProfileActions = ({ candidate }) => {
             <button className="button1">&#x2726;</button>
             <button className="button1" onClick={handleShow}>&#9998;</button>
             <button className="button1">&#9479;</button>
-            <InputDetails show={show} handleClose={handleClose} handleShow={handleShow} candidate={candidate} />
+            <InputDetails show={show} handleClose={handleClose} candidate={candidate} />
         </div>
     )
 }

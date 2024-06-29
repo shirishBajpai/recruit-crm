@@ -3,11 +3,11 @@ import Modal from 'react-bootstrap/Modal';
 import Translations from '../Common/Translations';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateCandidate } from '../../actions/candidate';
+import { putCandidateDetails, updateCandidate } from '../../actions/candidate';
 import './InputDetails.css';
 import { getCurrentDate } from '../Common/helper';
 
-const InputDetails = ({ handleClose, handleShow, show, candidate }) => {
+const InputDetails = ({ handleClose, show, candidate }) => {
     const dispatch = useDispatch();
     const [basicInfo, setBasicInfo] = useState({})
     const [jobDetails, setJobDetails] = useState({})
@@ -28,8 +28,8 @@ const InputDetails = ({ handleClose, handleShow, show, candidate }) => {
     }
 
     const handleSave = () => {
-
         dispatch(updateCandidate({ basic_info: basicInfo, job_details: jobDetails }))
+        dispatch(putCandidateDetails({ basic_info: basicInfo, job_details: jobDetails }))
         handleClose()
     }
 
