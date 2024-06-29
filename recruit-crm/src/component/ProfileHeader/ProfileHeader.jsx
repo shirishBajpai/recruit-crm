@@ -1,7 +1,7 @@
 import ProfileActions from './ProfileActions/ProfileActions';
 import './ProfileHeader.css';
-import image from "/Users/shirishbajpai/Desktop/learning/Recruit-crm/recruit-crm/src/assets/image.jpg"
-import facebook from "/Users/shirishbajpai/Desktop/learning/Recruit-crm/recruit-crm/src/assets/facebook.png"
+import image from "/Users/shirishbajpai/Desktop/learning/recruit-crm/recruit-crm/src/assets/image.jpg"
+import facebook from "/Users/shirishbajpai/Desktop/learning/recruit-crm/recruit-crm/src/assets/facebook.png"
 import Contacts from './Contacts';
 
 const ProfileHeader = ({ candidate }) => {
