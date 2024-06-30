@@ -44,5 +44,6 @@ You may also see any lint errors in the console.
 
 ### `API's`
 
-API runs at [http://localhost:3001](http://localhost:3001) to view it in your browser.
+- API runs at [http://localhost:3001](http://localhost:3001) to view it in your browser. 
+- The API contract is in the file src/mockData/candidate.json.
 
