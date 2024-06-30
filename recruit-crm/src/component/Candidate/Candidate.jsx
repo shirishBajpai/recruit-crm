@@ -7,16 +7,24 @@ import './Candidate.css'
 
 const Candidate = () => {
     const dispatch = useDispatch();
-    const candidate = useSelector((state) => state?.candidateDetails?.candidate) || {};
+    const { candidate, isFetching, isError } = useSelector((state) => state?.candidateDetails) || {};
 
     useEffect(() => {
         dispatch(getCandidateDetails());
     }, [])
+
     return (
         <div className="candidate">
-            <ProfileHeader candidate={candidate} />
-            <Details candidate={candidate?.job_details} />
-        </div>
+            {isFetching ?
+                <div className="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div> : isError ? "Error-occured" :
+                    <>
+                        <ProfileHeader candidate={candidate} />
+                        <Details candidate={candidate?.job_details} />
+                    </>
+            }
+        </div >
     )
 }
 

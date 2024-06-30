@@ -1,1 +1,2 @@
 export const CANDIDATE = 'CANDIDATE';
+export const CANDIDATE_ERROR = 'CANDIDATE_ERROR';
